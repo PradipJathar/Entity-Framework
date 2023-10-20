@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Section4_ExerciseSolution_CodeFirst
+namespace Section4_And_5_ExerciseSolution_CodeFirst
 {
     public class Video
     {

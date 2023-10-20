@@ -1,18 +1,18 @@
-namespace Section4_ExerciseSolution_CodeFirst.Migrations
+namespace Section4_And_5_ExerciseSolution_CodeFirst.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Section4_ExerciseSolution_CodeFirst.VidzyCodeFirstDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Section4_And_5_ExerciseSolution_CodeFirst.VidzyCodeFirstDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Section4_ExerciseSolution_CodeFirst.VidzyCodeFirstDbContext context)
+        protected override void Seed(Section4_And_5_ExerciseSolution_CodeFirst.VidzyCodeFirstDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

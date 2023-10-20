@@ -1,4 +1,4 @@
-namespace Section4_ExerciseSolution_CodeFirst.Migrations
+namespace Section4_And_5_ExerciseSolution_CodeFirst.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
