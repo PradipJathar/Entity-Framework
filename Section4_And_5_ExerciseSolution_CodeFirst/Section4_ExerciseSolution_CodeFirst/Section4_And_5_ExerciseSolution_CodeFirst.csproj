@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classification.cs" />
+    <Compile Include="EntityConfigurations\GenreConfiguratitons.cs" />
+    <Compile Include="EntityConfigurations\VideoConfiguratitons.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="Migrations\202310181102341_InitialModel.cs" />
     <Compile Include="Migrations\202310181102341_InitialModel.Designer.cs">
@@ -67,9 +69,22 @@
     <Compile Include="Migrations\202310181120156_AddClassificationToVideosTable.Designer.cs">
       <DependentUpon>202310181120156_AddClassificationToVideosTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202310201322417_EnhanceVideoTable.cs" />
+    <Compile Include="Migrations\202310201322417_EnhanceVideoTable.Designer.cs">
+      <DependentUpon>202310201322417_EnhanceVideoTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202310201340452_EnhanceGenreTable.cs" />
+    <Compile Include="Migrations\202310201340452_EnhanceGenreTable.Designer.cs">
+      <DependentUpon>202310201340452_EnhanceGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311260429032_AddManyToManyRelationshipBetweenVideosAndTags.cs" />
+    <Compile Include="Migrations\202311260429032_AddManyToManyRelationshipBetweenVideosAndTags.Designer.cs">
+      <DependentUpon>202311260429032_AddManyToManyRelationshipBetweenVideosAndTags.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tag.cs" />
     <Compile Include="Video.cs" />
     <Compile Include="VidzyCodeFirstDbContext.cs" />
   </ItemGroup>
@@ -89,6 +104,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202310181120156_AddClassificationToVideosTable.resx">
       <DependentUpon>202310181120156_AddClassificationToVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310201322417_EnhanceVideoTable.resx">
+      <DependentUpon>202310201322417_EnhanceVideoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310201340452_EnhanceGenreTable.resx">
+      <DependentUpon>202310201340452_EnhanceGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311260429032_AddManyToManyRelationshipBetweenVideosAndTags.resx">
+      <DependentUpon>202311260429032_AddManyToManyRelationshipBetweenVideosAndTags.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

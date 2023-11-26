@@ -1,4 +1,6 @@
-﻿using System.Data.Entity;
+﻿using Section4_And_5_ExerciseSolution_CodeFirst.EntityConfigurations;
+using System.Data.Common;
+using System.Data.Entity;
 
 namespace Section4_And_5_ExerciseSolution_CodeFirst
 {
@@ -10,6 +12,12 @@ namespace Section4_And_5_ExerciseSolution_CodeFirst
         public VidzyCodeFirstDbContext() : base("name=DefaultConnection")
         {
 
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new VideoConfiguratitons());
+            modelBuilder.Configurations.Add(new GenreConfiguratitons());
         }
     }
 }
